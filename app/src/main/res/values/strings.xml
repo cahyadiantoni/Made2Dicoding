@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">JetMovie</string>
+    <string name="title_movie">Movies</string>
+    <string name="title_tvshow">TV Shows</string>
+    <string name="title_favorite">Favorites</string>
+
+    <string name="welcome_details">Explore a plethora of films, TV shows, and people waiting to be uncovered. Start your journey now.</string>
+    <string name="movie">Movie</string>
+    <string name="tv_show">TV Show</string>
+    <string name="sinopsis">Synopsis</string>
+    <string name="season">Season</string>
+    <string name="title_activity_movie_detail">Movie Detail</string>
+    
+    <string name="error_while_getting_data">Data retrieval malfunction</string>
+    <string name="addedToFavorite">Success Add to Favorite</string>
+    <string name="removedFromFavorite">Success Remove from favorites</string>
+    <string name="title_activity_search">Search Films</string>
+    <string name="trending_this_week">Trending Now!</string>
+
+    <string name="navigation_drawer_open">Open navigation</string>
+    <string name="navigation_drawer_close">Close navigation</string>
+    <string name="nav_header_title">Cahya Diantoni</string>
+    <string name="nav_header_subtitle">cahyadiantoni@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="search_hint">Enter title for search …</string>
+    <string name="search_title">Search …</string>
+
+    <string name="large_text">
+        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+    </string>
+    <string name="poster">Poster</string>
+    <string name="dummy_title">Films Title</string>
+    <string name="dummy_date">Apr 02, 2023</string>
+    <string name="title_activity_tv_show_detail">Tv Show Detail</string>
+    <string name="dummy_duration">24 h 24 m</string>
+    <string name="dummy_genre">Films Genres</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="title_activity_favorite">FavoriteActivity</string>
+</resources>
