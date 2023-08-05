@@ -41,7 +41,7 @@ apply from: '../shared_dependencies.gradle'
 dependencies {
     implementation "androidx.room:room-ktx:$roomVersion"
     implementation "androidx.sqlite:sqlite-ktx:2.3.1"
-    implementation "net.zetetic:android-database-sqlcipher:4.4.0"
+    implementation "net.zetetic:android-database-sqlcipher:4.5.4"
 
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$kotlinCoroutinesVersion"
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$kotlinCoroutinesVersion"

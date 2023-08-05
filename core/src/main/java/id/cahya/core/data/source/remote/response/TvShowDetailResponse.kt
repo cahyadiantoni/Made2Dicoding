@@ -1,7 +1,11 @@
+@file:Suppress("unused", "unused", "unused", "unused")
+
 package id.cahya.core.data.source.remote.response
 
+import androidx.annotation.Keep
 import com.google.gson.annotations.SerializedName
 
+@Keep
 data class TvShowDetailResponse(
 
 	@field:SerializedName("original_language")
@@ -98,6 +102,7 @@ data class TvShowDetailResponse(
 	val videos: VideoResults? = null
 )
 
+@Keep
 data class CreatedByItem(
 
 	@field:SerializedName("gender")
@@ -116,6 +121,7 @@ data class CreatedByItem(
 	val id: Int? = null
 )
 
+@Keep
 data class LastEpisodeToAir(
 
 	@field:SerializedName("production_code")
@@ -149,6 +155,7 @@ data class LastEpisodeToAir(
 	val voteCount: Int? = null
 )
 
+@Keep
 data class NetworksItem(
 
 	@field:SerializedName("logo_path")
@@ -164,6 +171,7 @@ data class NetworksItem(
 	val originCountry: String? = null
 )
 
+@Keep
 data class SeasonsItem(
 
 	@field:SerializedName("air_date")
