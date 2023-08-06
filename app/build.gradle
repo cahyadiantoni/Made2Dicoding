@@ -5,6 +5,12 @@ plugins {
     id 'kotlin-kapt'
 }
 
+def apikeyPropertiesFile = file("local.properties")
+def apikeyProperties = new Properties()
+if (apikeyPropertiesFile.canRead()) {
+    apikeyProperties.load(new FileInputStream(apikeyPropertiesFile))
+}
+
 android {
     namespace 'id.cahya.made1dicoding'
     compileSdk 33
@@ -15,13 +21,18 @@ android {
         targetSdk 33
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
@@ -51,6 +62,7 @@ android {
         baseline file("lint-baseline.xml")
         lintConfig = file("$rootDir/glide-notif.xml")
     }
+    buildToolsVersion '33.0.2'
 }
 
 apply from: '../shared_dependencies.gradle'

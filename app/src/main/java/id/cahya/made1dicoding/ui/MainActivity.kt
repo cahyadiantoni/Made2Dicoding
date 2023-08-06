@@ -13,13 +13,10 @@ import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
-import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import id.cahya.made1dicoding.R
 import id.cahya.made1dicoding.databinding.ActivityMainBinding
-import id.cahya.made1dicoding.ui.movies.MoviesFragment
-import id.cahya.made1dicoding.ui.tvshows.TvShowsFragment
 import id.cahya.made1dicoding.ui.search.SearchActivity
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {

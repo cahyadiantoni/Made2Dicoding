@@ -161,6 +161,12 @@ class TvShowDetailActivity : AppCompatActivity() {
         }
     }
 
+    override fun onSupportNavigateUp(): Boolean {
+        // Kode untuk navigasi ke halaman sebelumnya
+        onBackPressed()
+        return true
+    }
+
     companion object {
         const val EXTRA_TV_SHOW = "extra_tv_show"
     }

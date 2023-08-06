@@ -112,6 +112,12 @@ class MovieDetailActivity : AppCompatActivity() {
         }
     }
 
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
+    }
+
+
     companion object {
         const val EXTRA_MOVIE = "extra_movie"
     }
