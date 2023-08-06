@@ -57,6 +57,7 @@ apply from: '../shared_dependencies.gradle'
 
 dependencies {
     implementation project(":core")
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.11'
 }
 
 kapt {

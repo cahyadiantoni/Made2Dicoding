@@ -77,16 +77,15 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
-        var fragment: Fragment? = null
         var title = getString(R.string.app_name)
         when (item.itemId) {
             R.id.navigation_movies -> {
-                fragment = MoviesFragment()
                 title = getString(R.string.title_movie)
+                navController.navigate(R.id.navigation_movies)
             }
             R.id.navigation_tvshows -> {
-                fragment = TvShowsFragment()
                 title = getString(R.string.title_tvshow)
+                navController.navigate(R.id.navigation_tvshows)
             }
             R.id.menu_search -> {
                 val intent = Intent(this, SearchActivity::class.java)
@@ -97,13 +96,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 startActivity(Intent(Intent.ACTION_VIEW, uri))
             }
         }
-        if (fragment != null) {
-            supportFragmentManager.beginTransaction()
-                .replace(R.id.nav_host_fragment_content_main2, fragment)
-                .commit()
-        }
-        supportActionBar?.title = title
 
+        supportActionBar?.title = title
         binding.drawerLayout.closeDrawer(GravityCompat.START)
         return true
     }
