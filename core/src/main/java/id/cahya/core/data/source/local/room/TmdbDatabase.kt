@@ -30,7 +30,7 @@ abstract class TmdbDatabase : RoomDatabase() {
                 Room.databaseBuilder(
                     context.applicationContext,
                     TmdbDatabase::class.java,
-                    "Tmdb.db"
+                    "JetMovie.db"
                 )
                     .fallbackToDestructiveMigration()
                     .openHelperFactory(factory)

@@ -20,7 +20,7 @@ interface TmdbDao {
     @Query("SELECT * FROM movies WHERE movieId = :movieId")
     fun getMovieById(movieId: String): Flow<MovieEntity>
 
-    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    @Insert(onConflict = OnConflictStrategy.IGNORE)
     fun insertMovie(movie: List<MovieEntity>)
 
     @Update
@@ -40,7 +40,7 @@ interface TmdbDao {
     @Query("SELECT * FROM seasons LEFT JOIN tvShows ON tvShows.tvShowId = seasons.tvShowId WHERE seasons.tvShowId = :tvShowId")
     fun getSeasonByTvShowId(tvShowId: String): Flow<TvShowWithSeasonEntity>
 
-    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    @Insert(onConflict = OnConflictStrategy.IGNORE)
     fun insertTvShow(tvShow: List<TvShowEntity>)
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
